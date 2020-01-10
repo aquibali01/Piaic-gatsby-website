@@ -1,0 +1,114 @@
+// // .footer {
+// //     position: absolute;
+// // }
+
+// body {
+//     margin: 0px;
+// }
+
+// footer {
+//     margin-bottom: 0px;
+//     height: 60px;
+//     background-color: #12232f;
+//     text-align: center;
+//     padding: 5px;
+//     font-weight: 400px;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     // margin: 0px -22px -22px -9px;
+//     // p {
+//     //     display: inline-block;
+//     //     color: white;
+//     // }
+//     p{
+//         color: white;
+        
+//     }
+// //     .inf {
+// //         margin-left: 1199px;
+// //         // width: 100px;
+// //         display: inline-block;
+// //         color: white;
+// //         // text-align: center;
+// //         // align-items: center;
+// //         // b {
+// //         //     margin-left: 40px;
+// //         //     font-size: 14px;
+// //         //     // text-align: right;
+// //         //     align-items: center;
+// //         // }
+// //         img {
+// //             // position: absolute;
+// //             // right: 0;
+// //             width: 100px ;
+// //         }
+// //     }
+//  }
+
+// // .aa{
+// //     text-align: center;
+// //     display: inline-flex;
+// //     // margin-left: ;
+// //     color: white;
+// //     width: max-content;
+// //     // .b {
+// //     //     padding-bottom: 5px;
+// //     // }
+// // }
+
+// // .inf {
+// //     margin-right: -600px;
+// //     display: inline-block;
+// //     width: max-content;
+// //     img{
+// //         width: 100px;
+// //     }
+// // }
+
+
+
+
+footer {
+    margin-top: -11px;
+    // margin-bottom: 0px;
+    height: 70px;
+    background-color:rgb(0, 38, 49) ;
+    background-attachment: fixed;
+    background-position: bottom right;
+    width: 100%;
+    top: 0;
+    p{
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        margin:0;
+        margin-left: 0.2rem;
+        margin-top: 5px;
+    }
+    h1 {
+        font-size: 16px;
+        font-weight: lighter;
+        color: white;
+        margin-bottom: -2.5rem;
+        text-align: center;
+        padding-top: 1.4rem;
+    }
+  }
+.logo {
+    margin-right: 4px;
+    text-align: center;
+    float: right;
+    img {
+        height:"auto";
+        width: 80px;
+    }
+    
+}
+
+footer {
+    @media only screen and (max-width: 380px) {
+        h1 {
+            font-size: 13px;
+        }
+    }
+}
