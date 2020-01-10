@@ -23,13 +23,17 @@ margin: 0;
   margin: 0;
   list-style: none;
   font-weight: lighter;
-  background-color: rgb(1, 100, 95);
+  background-image: linear-gradient(270deg,#08383d,#01645f);
   // background: linear-gradient(to right, rgb(67, 109, 98) , rgb(27, 95, 75));
   z-index: 111;
   height: 65px;
   // height: auto;
+  // padding-top: 20px;
   a {
     text-decoration: none;
+  }
+  li {
+    padding-top: 3px;
   }
   
 }
@@ -61,17 +65,20 @@ margin: 0;
 
 /*--- DROPDOWN ---*/
 .nav__sub_menu {
-  background:  linear-gradient(to right, rgb(94, 165, 146) , rgb(22, 170, 126));
-  padding:0;
-  margin-top: -1.2rem;
+  background-image: linear-gradient(270deg,#08383d,#01645f);
+  padding-right:23px;
+  padding-left: 0;
+  margin-top: -1rem;
   list-style: none;
   position: absolute;
   left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+  width: 240%;
+  margin-left: -110px;
 }
 
 .nav__sub_menu li {
   float: left;
-  padding: 0em;
+  padding: 1em;
   line-height: 0rem;
   border-bottom: 1.4px solid rgb(118, 224, 193);
   width: 100%;
@@ -84,200 +91,3 @@ margin: 0;
 .nav li:hover ul{ /* Display the dropdown on hover */
   left: 0; /* Bring back on-screen when needed */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .header {
-//     display: inline;
-//     // background-color: seagreen;
-// }
-
-// body {
-//   margin: 0px;
-// }
-
-
-// .c {
-//   nav {
-//     -moz-box-shadow: 0 0 10px #777777;
-//     -webkit-box-shadow: 0 0 10px #777777;
-//     box-shadow: 0 0 10px #777777;
-//     font-family: Arial, Helvetica, sans-serif;
-//     overflow: hidden;
-//     background-color: rgb(1, 100, 95);
-//     position: fixed;
-//     border: 1px solid rgb(1, 100, 95);
-//     top: 0;
-//     height: 60px;
-//     width: 100%;
-//     padding: 0;
-//     z-index: 111;
-//     // margin: 0px auto;
-//     // margin-left: -9px;
-//     // margin-right: -9px;
-//   ul {
-//     align-self: center;
-//     // justify-content: center;
-//     // display: inline-block;
-//     // margin-left: 100px;
-//     // display: inline-flex;
-//     // float: right;
-//     text-align: right;
-//     list-style-type: none;
-//     list-style-type: none;
-//     padding: 25px;
-//     margin: 0px;
-//     // padding-right: 30px;
-//     // margin-right: 50px;
-
-//     li {
-//       padding-right: 10px;
-//       display: inline;
-//       font-family: "Fira Sans", sans-serif;
-//       font-size: 17px;
-//       a {
-//         color: white;
-//         text-decoration: none;
-//         padding: 25px;
-//       }
-//       .nL {
-//         display: none;
-//       }
-
-//       p {
-//         // margin-top: -20px;
-//         // padding-bottom: 10px;
-//         display: inline;
-//         color: white;
-//         width: max-content;
-//         margin: 0px;
-        
-//       }
-//     }
-//   }
-// }
-// }
-
-// .NavbarLogoPiaic{
-//   position: fixed;
-//   margin-left: 15px;
-//   height: 80px !important;
-//   margin-right: 10px !important;
-//   margin-top: 15px !important;
-// }
-
-// .logo {
-//   width: 100px;
-//   height: 100px;
-//   // background-color: yellow;
-//   margin-top: 20px;
-//   position: fixed;
-//   margin-left: 15px;
-//   z-index: 1111;
-// }
-
-
-// .hs {
-//   margin-top: 20px;
-// }
-
-// .bc {
-//   width: 100%;
-//   background-color: rgb(231, 230, 230);
-//   margin-top: -20px;
-//   // margin: -40px -9px 0px 0px;
-//   // margin: -40px -20px -0px -9px;
-// }
-
-// .Pimg {
-//     width: 430px;
-//     margin-left: 40px;
-//     margin-top: 45px;
-//     margin-bottom: -60px;
-//   }
-
-
-// .ab {
-//   // margin-left: 100px;
-//   // color: greenyellow;
-//   width: 40%;
-//   height: auto;;
-//   background-color: greenyellow;
-//   margin-left: 700px;
-    
-//     p {
-//       text-align: right;
-//       // margin-left: 100px;
-//     }
-    
-//   }
-
-// // .Pimg:hover {
-// //     background-color: lightcyan;
-// // }
-
-
-
-// .g {
-//   margin-bottom: -13px;
-//   background-color: rgb(3, 2, 2);
-//   height: 200px;
-//   width: 100%;
-// }
-
-
-// // .z {
-// //   font-size: 20px;
-// // }

@@ -1,0 +1,55 @@
+body{
+    margin-left: 0;
+    font-family: sans-serif;
+}
+
+.mainImage{
+    margin-left: 0;
+    margin-top: 0;
+    height: 40%;
+    width: 100%;
+}
+.text {
+    color: rgba(70,70,75,.51);
+    padding: 100px;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+
+}
+
+.text p{
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+.galleryContainer{
+    margin-bottom: 20px;
+}
+.galleryHeading {
+    font-weight: 700;
+    text-align: center;
+    font-size: 4vw;
+    color: #3f4247;
+    text-transform: uppercase;
+    word-spacing: 2vw;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    margin: 10px;
+}
+.horizontalLine{
+    border: 1.5px solid rgba(0,0,0,.548);
+    width: 75vw;
+    margin: 3vw 11vw;
+}
+.galleryPara{
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
