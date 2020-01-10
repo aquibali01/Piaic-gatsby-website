@@ -2,6 +2,7 @@ import React from "react"
 import {graphql, useStaticQuery} from "gatsby"
 import Photos from "../components/photos"
 import WITStyles from"../styles/wit.module.scss"
+import Layout from "../components/layout"
 
 
 
@@ -34,6 +35,7 @@ const WIT = () => {
     `)
     return (
         <section>
+        <Layout>
         {/* <img className={WITStyles.mainImage} src={require("../images/win.jpeg")}/> */}
         {/* <div className={WITStyles.text}> */}
             {data.allContentfulWit.edges.map((edge)=>{
@@ -63,6 +65,7 @@ const WIT = () => {
             
             <Photos/>
         </div>
+        </Layout>
         </section>
     )
 }

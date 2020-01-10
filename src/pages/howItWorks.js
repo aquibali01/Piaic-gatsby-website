@@ -1,85 +1,84 @@
 import React from "react"
 import HIWStyles from "../styles/howItWorks.module.scss"
 import { Link,graphql,useStaticQuery } from "gatsby"
+import Layout from "../components/layout"
 
 const HowItWorks = () => {
-    const data = useStaticQuery(graphql`
-    query{
-        allContentfulHowItWorks{
-          edges{
-            node{
-              title
-              cities
-              para1{
-                content{
-                    content{
-                        value
-                    }
-                }
-              }
-              para2a{
-                para2a
-              }
-              para2b{
-                para2b
-              }
-              para3{
-                para3
-              }
-              para4{
-                para4
-              }
-              para5{
-                para5
-              }
-              para6{
-                para6
-              }
-              para7{
-                para7
-              }
-            }
-          }
-        }
-      }
-    `)
+
+    // const data = useStaticQuery(graphql`
+    // query{
+    //     allContentfulHowItWorks{
+    //       edges{
+    //         node{
+    //           title
+    //           para1{
+    //             para1
+    //           }
+    //           para2a{
+    //             para2a
+    //           }
+    //           para2b{
+    //             para2b
+    //           }
+    //           para3{
+    //             para3
+    //           }
+    //           para4{
+    //             para4
+    //           }
+    //           para5{
+    //             para5
+    //           }
+    //           para6{
+    //             para6
+    //           }
+    //           para7{
+    //             para7
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
     return (
-        <section >
+        <Layout>
+        <section>
             <div className={HIWStyles.container1}>
-            {/* <h1 className={HIWStyles.mainHeading}> */}
-                {/* How It Works */}
-                {data.allContentfulHowItWorks.edges.map((edge)=>{
-                    return (
-                        <>
-                        <h1 className={HIWStyles.mainHeading}>
-                        {edge.node.title}
-                        </h1>
-                        <hr className={HIWStyles.underline}/>
-                        <div className={HIWStyles.topContainer}>
-                            <div className={HIWStyles.bigCircle}>
-                                <p className={HIWStyles.bigNumber}>1</p>
-                            </div>
-                            <div className={HIWStyles.mainText}>
-                                PIAIC will launch classes in the following locations, one city at a time, in the following order
+            <h1 className={HIWStyles.mainHeading}>
+                How It Works
+                </h1> 
+                {/* {data.allContentfulHowItWorks.edges.map((edge)=>{ */}
+                    {/* // return ( */}
+                        {/* <> */}
+                        {/* <h1 className={HIWStyles.mainHeading}> */}
+                        {/* {edge.node.title} */}
+                        {/* </h1> */}
+                        {/* <hr className={HIWStyles.underline}/> */}
+                        {/* <div className={HIWStyles.topContainer}> */}
+                            {/* <div className={HIWStyles.bigCircle}> */}
+                                {/* <p className={HIWStyles.bigNumber}>1</p> */}
+                            {/* </div> */}
+                            {/* <div className={HIWStyles.mainText}> */}
+                                {/* PIAIC will launch classes in the following locations, one city at a time, in the following order */}
                                 {/* {edge.node.para1.content.content.value} */}
-                            </div>
-                        </div>
-                        </>
-                    )
-                })}
-            {/* </h1> */}
-            {/* <hr className={HIWStyles.underline}/> */}
-            {/* <div className={HIWStyles.topContainer}>
+                            {/* </div> */}
+                        {/* </div> */}
+                        {/* </> */}
+                    {/* ) */}
+                {/*  })} */}
+            
+             <hr className={HIWStyles.underline}/> 
+             <div className={HIWStyles.topContainer}>
                 <div className={HIWStyles.bigCircle}>
                     <p className={HIWStyles.bigNumber}>1</p>
                 </div>
                 <div className={HIWStyles.mainText}>
                 PIAIC will launch classes in the following locations, one city at a time, in the following order
                 </div>
-            </div> */}
+            </div> 
             <div className={HIWStyles.bottomContainer}>
                 <div>
-                    <img src={require("../images/pakMap.png")} />
+                    <img className={HIWStyles.image}src={require("../images/pakMap.png")} />
                 </div>
                 <div className={HIWStyles.rightCol}>
                     <p className={HIWStyles.tableHeading}>City by City Roadmap</p>
@@ -116,6 +115,7 @@ const HowItWorks = () => {
                 </div>
             </div>
         </div>
+        
 
         <div className={HIWStyles.container2}>
             <div className={HIWStyles.topContainer}>
@@ -200,8 +200,9 @@ const HowItWorks = () => {
                 </div>
              
             </div>
+            
     </section>
-
+    </Layout>
         
     )
 }
