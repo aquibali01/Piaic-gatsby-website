@@ -16,7 +16,7 @@
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "bootstrap": "^4.4.1",
-    "gatsby": "^2.18.12",
+    "gatsby": "^5.9.0",
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-source-contentful": "^2.1.73",
     "node-sass": "^4.13.0",
